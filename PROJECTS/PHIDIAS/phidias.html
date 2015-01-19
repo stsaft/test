@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Research Unit PRIAn - Pattern Recognition and Image Analysis</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="PHIDIAS: Phenotyping with a High-throughput, Intelligent, Distributed, and Interactive Analysis System" />
+    <meta name="keywords" content="image analysis, plant imaging, arabidopsis, sensor, compression, phenotyping, image processing" />
+    <meta name="author" content="Massimo Minervini" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" type="text/css" href="../../images/MarketPlace.css" />
+    <link rel="stylesheet" type="text/css" href="phidias.css" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30560689-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- wrap starts here -->
+    <div id="wrap"><!--header -->
+      <div id="header-photo">
+        <h1 id="logo-text"><a href="http://prian.lab.imtlucca.it/index.html" title="">PRIAn</a></h1>
+        <h2 id="slogan">PATTERN RECOGNITION AND IMAGE ANALYSIS</h2>
+        <!--header ends-->
+      </div>
+      <div id="main">
+        <!-- content-wrap starts -->
+        <div id="content-wrap" class="two-col">
+          <div id="sidebar">
+            <ul class="sidemenu">
+              <li><a href="http://prian.lab.imtlucca.it/">Home</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/People.html">People</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Research.html">Research</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Publications.html">Publications</a></li>
+			  <li><a href="http://prian.lab.imtlucca.it/Applications.html">Applications</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Collaborations.html">Collaborations</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Projects.html">Projects</a></li>
+			  <li><a href="http://prian.lab.imtlucca.it/Events.html">Events</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Openings.html">Open Positions</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/Contact.html">Contact</a></li>
+            </ul>
+            <br />
+            <a href="http://www.imtlucca.it/" target="_blank"><img src="../../images/IMT_Logo.gif" alt="IMT Lucca" style="margin-left:15px; width:111px; height:118px;" /></a>
+          </div>
+          <div id="main">
+            <h1>PHIDIAS: Phenotyping with a High-throughput, Intelligent, Distributed, and Interactive Analysis System</h1>
+            
+            <figure id="fig0" style="margin-top:1em">
+              <img width="600" height="145" src="logo.png" alt="PHIDIAS Logo" />
+            </figure>
+
+            <h3>Description</h3>
+            <p>Project <a href="http://cordis.europa.eu/projects/rcn/95172_en.html" target="_blank">PHIDIAS</a> has the objective of providing an affordable, high-throughput, distributed, knowledge-sharing platform for phenotype collection and analysis. PHIDIAS will incorporate lessons learned from prior phenotyping efforts and will be a simple to use platform for acquiring (non-destructively and continuously) and analyzing phenotypes from plant experiments. Its novelty arises from the fact that it combines distributed affordable sensors (cameras) to collect images and transmit them over the Internet for centralized processing (see <a href="#fig1">Fig. 1</a>). With slight modifications to their software, commercial cameras can become powerful image acquisition devices.</p>
+
+            <figure id="fig1">
+              <img width="600" height="224" src="architecture.png" alt="PHIDIAS architecture" />
+              <figcaption>Figure 1. PHIDIAS architecture at a glance.</figcaption>
+            </figure>
+
+            <p>To increase the fidelity of our data, we acquire multiple sequential images of different parameters (focus, zoom, exposure) to generate high resolution, fully focused composite images, using sophisticated algorithms borrowed from computational photography running in processing servers (see <a href="#fig2">Fig. 2</a> and <a href="#fig3">Fig. 3</a>).</p>
+
+            <figure id="fig2">
+              <img width="600" height="223" src="banner.jpg" alt="Imaging setup" />
+              <figcaption>Figure 2. Left: imaging setup for Arabidopsis; right: example image and a plant segmented with an active contour method.</figcaption>
+            </figure>
+            
+            <figure id="fig3">
+              <img width="290" height="217" src="timelapse_original.gif" alt="Time-lapse original image" />
+              <img width="290" height="217" src="timelapse_segmentation.gif" alt="Time-lapse ground-truth segmentation" />
+              <figcaption>Figure 3. Left: time-lapse images of Arabidopsis seedlings; right: corresponding ground-truth segmentation masks obtained manually.</figcaption>
+            </figure>
+            
+            <p>The same servers also process the images and extract relevant phenotyping information (see <a href="#fig4">Fig. 4</a>). All the data are stored in databases and offered to the user for exploration through a modern web-based graphical user interface (via the <a href="http://bisque.iplantcollaborative.org/" target="_blank">BisQue</a> image analysis environment on the <a href="http://www.iplantcollaborative.org/" target="_blank">iPlant Collaborative</a> platform).</p>
+            
+            <figure id="fig4">
+              <img width="600" height="299" src="panel.jpg" alt="PHIDIAS architecture" />
+              <figcaption>Figure 4. Row wise: example images of a plant at different growth stages (top), and correspondig segmentation masks obtained with the proposed analysis system (bottom).</figcaption>
+            </figure>
+
+            <p>The users can even edit and view images online through the Web. PHIDIAS learns from the user's inputs, for training continuously the learning-based image processing algorithms, in order to increase performance. We will provide an arena of constant development and evolution by adopting open source, open development, and affordable hardware standards. Thus, users can help PHIDIAS evolve by contributing data and functionality.</p>
+
+            <h3>People</h3>
+            <ul>
+              <li><a href="http://prian.lab.imtlucca.it/SA_Tsaftaris.html">Prof. Sotirios Tsaftaris</a></li>
+              <li><a href="http://www.guidocaldarelli.com/" target="_blank">Prof. Guido Caldarelli</a></li>
+              <li><a href="http://prian.lab.imtlucca.it/minervini.html">Massimo Minervini</a></li>
+              <li><a href="http://www.imtlucca.it/whos_at_imt/personal_page.php?p=8166" target="_blank">Cristian Rusu</a></li>
+              <li><a href="http://www.imtlucca.it/whos_at_imt/personal_page.php?n=Fabiana+Zollo&p=11966" target="_blank">Fabiana Zollo</a></li>
+            </ul>
+            
+            <h3>Publications</h3>
+            <ol>
+                <li>M. Minervini, C. Rusu, S. A. Tsaftaris, &ldquo;Unsupervised and Supervised Approaches to Color Space Transformation for Image Coding&rdquo;, in <em>21st International Conference on Image Processing (ICIP)</em>, Paris, France, Oct. 2014.<br /></li>
+                <li>M. Minervini, M. M. Abdelsamea, S. A. Tsaftaris, &ldquo;Image-based plant phenotyping with incremental learning and active contours&rdquo;, <em>Ecological Informatics</em>, vol. 23, pp. 35&ndash;48, Sep. 2014, Special Issue on Multimedia in Ecology and Environment. [<a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1574954113000691">Online</a>]<br /></li>
+                <li>H. Scharr, M. Minervini, A. Fischbach, S. A. Tsaftaris, &ldquo;Annotated Image Datasets of Rosette Plants&rdquo;, Forschungszentrum J&uuml;lich GmbH, J&uuml;lich, Germany, Tech. Rep. FZJ-2014-03837, Jul. 2014. [<a target="_blank" href="http://hdl.handle.net/2128/5848">Online</a>]<br /></li>
+                <li>M. Minervini, C. Rusu, S. A. Tsaftaris, &ldquo;Learning Computationally Efficient Approximations of Complex Image Segmentation Metrics&rdquo;, in <em>8th International Symposium on Image and Signal Processing and Analysis (ISPA)</em>, Trieste, Italy, Sep. 2013, pp. 60&ndash;65. [<a target="_blank" href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6703715">Online</a>]<br /></li>
+    			<li>M. Minervini, S. A. Tsaftaris, &ldquo;Application-Aware Image Compression for Low Cost and Distributed Plant Phenotyping&rdquo;, in <em>18th International Conference on Digital Signal Processing (DSP)</em>, Santorini, Greece, Jul. 2013, pp. 1&ndash;6. [<a target="_blank" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6622670">Online</a>]<br /></li>
+                <li>S. A. Tsaftaris, C. Noutsos, &ldquo;Plant Phenotyping with Low Cost Digital Cameras and Image Analytics&rdquo;, ser. Environmental Science and Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009, ch. 18, pp. 238&ndash;251. [<a target="_blank" href="http://link.springer.com/chapter/10.1007%2F978-3-540-88351-7_18">Online</a>]</li>
+            </ol>
+            
+            <h3>Funding</h3>
+            <p>This work is supported by a Marie Curie Action: &ldquo;Reintegration Grant&rdquo; [grant number 256534] of the EU's Seventh Framework Programme (FP7).</p>
+            <img height="80" width="118" src="EU.png" alt="European Union" />
+            <a href="http://cordis.europa.eu/fp7/home_en.html" target="_blank"><img height="80" src="FP7.png" alt="FP7" /></a>
+
+            <h3>News &amp; Progress</h3>
+            <dl class="event">
+              <dt>30.10.2014</dt><dd>Massimo presents the paper &ldquo;Unsupervised and Supervised Approaches to Color Space Transformation for Image Coding&rdquo; at the <em>21st International Conference on Image Processing</em> (<a href="http://www.icip2014.org" target="_blank">ICIP 2014</a>) in Paris, France (WP1)</dd>
+              <dt>16.10.2014</dt><dd>Online the first version of the PHIDIAS module in the <a href="http://bisque.iplantcollaborative.org/" target="_blank">BisQue</a> image analysis environment of the <a href="http://www.iplantcollaborative.org/" target="_blank">iPlant Collaborative</a> platform (WP5)</dd>
+              <dt>18.07.2014</dt><dd>Report &ldquo;Annotated Image Datasets of Rosette Plants&rdquo; published as technical report no. FZJ-2014-03837 of the Forschungszentrum J&uuml;lich, J&uuml;lich, Germany (WP3)</dd>
+              <dt>21.05.2014</dt><dd>Paper &ldquo;Unsupervised and Supervised Approaches to Color Space Transformation for Image Coding&rdquo; accepted to the <em>21st International Conference on Image Processing</em> (<a href="http://www.icip2014.org" target="_blank">ICIP 2014</a>) in Paris, France (WP1)</dd>
+              <dt>28.02.2014</dt><dd><a target="_blank" href="http://www.plant-phenotyping.org/CVPPP2014">CVPPP</a> workshop will host a <a target="_blank" href="http://www.plant-phenotyping.org/CVPPP2014-challenge">competition and challenge</a> for the solution of plant leaf segmentation (WP4)</dd>
+              <dt>28.02.2014</dt><dd>Workshop on <a target="_blank" href="http://www.plant-phenotyping.org/CVPPP2014">Computer Vision Problems in Plant Phenotyping (CVPPP)</a> to be held in conjunction with ECCV in September 2014, is approved (WP7)</dd>
+              <dt>11.02.2014</dt><dd>Paper on color transforms submitted to the <em>21st International Conference on Image Processing</em> (WP1)</dd>
+              <dt>12.11.2013</dt><dd>Massimo visits J&uuml;lich (Germany) for a research internship at the Institute of Plant Sciences (<a target="_blank" href="http://www.fz-juelich.de/ibg/ibg-2/EN/Home/home_node.html">IBG-2</a>) of the Forschungszentrum J&uuml;lich (WP7)</dd>
+              <dt>07.11.2013</dt><dd>Dr. <a target="_blank" href="http://www.fz-juelich.de/ibg/ibg-2/DE/Mitarbeiter/_et/Scharr_Hanno/Scharr.html">Hanno Scharr</a> from J&uuml;lich (Germany) gives a seminar on plant phenotyping (WP7)</dd>
+              <dt>05.11.2013</dt><dd>Fabiana joins the project</dd>
+              <dt>23.10.2013</dt><dd>Dr. <a target="_blank" href="http://borevitzlab.anu.edu.au/borevitz-lab-people/tim-brown/">Tim Brown</a> from the Australian National University (ANU) gives a seminar in the lab on plant phenotyping (WP7)</dd>
+              <dt>01.09.2013</dt><dd>New arabidopsis phenotyping experiment conducted at IMT (wildtype and mutants) and new data collected with more than 2000 images acquired (WP3)</dd>   
+              <dt>05.09.2013</dt><dd>Massimo presents the paper &ldquo;Learning Computationally Efficient Approximations of Complex Image Segmentation Metrics&rdquo; at the <em>8th International Symposium on Image and Signal Processing and Analysis</em> (<a href="http://www.isispa.org/" target="_blank">ISPA 2013</a>) in Trieste, Italy (WP1)</dd>
+              <dt>23.07.2013</dt><dd>Paper &ldquo;Image-based plant phenotyping with incremental learning and active contours&rdquo; accepted for publication in <em>Ecological Informatics</em>, special issue on Multimedia in Ecology and Environment (WP4)</dd>
+              <dt>03.07.2013</dt><dd>Professor Tsaftaris presents the paper &ldquo;Application-Aware Image Compression for Low Cost and Distributed Plant Phenotyping&rdquo; at the <em>18th International Conference on Digital Signal Processing</em> (<a href="http://dsp2013.dspconferences.org/" target="_blank">DSP 2013</a>) in Santorini, Greece (WP1)</dd>
+              <dt>20.06.2013</dt><dd><a href="http://www.bioimage.ucsb.edu/bisque" target="_blank">Bisque</a> application module for integration to iPlant is under development (WP5)</dd>
+              <dt>05.06.2013</dt><dd>Paper &ldquo;Learning Computationally Efficient Approximations of Complex Image Segmentation Metrics&rdquo; accepted to the <em>8th International Symposium on Image and Signal Processing and Analysis</em> (<a href="http://www.isispa.org/" target="_blank">ISPA 2013</a>) in Trieste, Italy (WP1)</dd>
+              <dt>23.04.2013</dt><dd>Paper on plant image segmentation metrics submitted to the <em>8th International Symposium on Image and Signal Processing and Analysis</em> (WP1)</dd>
+              <dt>18.04.2013</dt><dd>Presentation to the <a href="http://utagri.enea.it/en" target="_blank">UT-AGRI</a> team in ENEA, Rome (WP7)</dd>
+              <dt>21.02.2013</dt><dd>Web conference with the <a href="http://www.iplantcollaborative.org/" target="_blank">iPlant Collaborative</a> project, for the integration of PHIDIAS within their Web-based service and user interface (WP5)</dd>
+              <dt>10.02.2013</dt><dd>Paper on the design of the sensor and the compression scheme submitted to the <em>18th International Conference on Digital Signal Processing</em> (WP1)</dd>
+              <dt>31.01.2013</dt><dd>Paper on the analysis system submitted to <em>Ecological Informatics</em>, special issue on Multimedia in Ecology and Environment (WP4)</dd>
+              <dt>15.12.2012</dt><dd>Manual labelling of the image dataset, for the validation of the analysis system (WP3)</dd>
+              <dt>03.10.2012</dt><dd>Imaging pipeline to extract trays/plants (WP4)</dd>
+              <dt>18.07.2012</dt><dd>1572 images collected for Arabidopsis plants over a period of 43 days (WP3)</dd>
+              <dt>25.06.2012</dt><dd>New level set algorithm for plant segmentation (paper in preparation) (WP4)</dd>
+              <dt>15.06.2012</dt><dd>Presentation to the <a href="http://www.plantlab.sssup.it/" target="_blank">PlantLab</a> team in Scuola Superiore Sant'Anna, Pisa (WP7)</dd>
+              <dt>30.05.2012</dt><dd><a href="http://www.plantlab.sssup.it/" target="_blank">PlantLab</a> (Scuola Superiore Sant'Anna, Pisa) donates 19 seedlings of <emph>Arabidopsis thaliana</emph> Col-0 (WP3)</dd>
+              <dt>28.05.2012</dt><dd>Test-bed structure for growing and imaging Arabidopsis plants is ready (WP3)</dd>
+              <dt>23.05.2012</dt><dd>CHDK script is ready and Eye-Fi server is running on a Linux machine (WP2)</dd>
+              <dt>28.03.2012</dt><dd>PHIDIAS, IMT member of the <a href="http://www.iplantcollaborative.org/" target="_blank">iPlant Collaborative</a> project</dd>
+              <dt>08.03.2012</dt><dd>Massimo discusses his PhD thesis proposal for <em>Application-Aware Image Compression and Sensing Platform for Plant Phenotyping</em> (WP1)</dd>
+              <dt>01.09.2011</dt><dd>PHIDIAS start date</dd>
+            </dl>
+            
+          </div>
+          <!-- content-wrap ends--> </div>
+        <!-- footer starts -->
+        <div id="footer-wrap">
+          <div id="footer">
+            <p> &copy; 2012 <strong>IMT Institute for Advanced Studies Lucca</strong> | CSS Template by: <a href="http://www.styleshout.com/">styleshout</a>
+            </p>
+          </div>
+        </div>
+        <!-- footer ends--><!-- wrap ends here -->
+      </div>
+    </div>
+
+  </body>
+</html>
